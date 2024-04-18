@@ -1,0 +1,81 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de Etiquetas */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos de Campos de Entrada */
+input[type="number"],
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos de Botones */
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del Botón Dummy */
+.dummy-button {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.dummy-button:hover {
+    text-decoration: underline;
+}
+.back-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.section-title {
+    text-align: center;
+    font-weight: bold;
+}
+

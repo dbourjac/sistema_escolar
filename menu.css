@@ -1,0 +1,31 @@
+/* Estilos para el menú secundario */
+.secondary-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #FFA9E7;
+  padding: 20px; /* Ajusta el padding según sea necesario */
+}
+
+.secondary-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.secondary-menu ul li {
+  display: inline;
+  font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto */
+  padding-left: 20px; /* Ajusta el espacio entre palabras */
+  padding-right: 20px; /* Ajusta el espacio entre palabras */
+}
+
+.secondary-menu ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.secondary-menu ul li a:hover {
+  background-color: #555;
+}

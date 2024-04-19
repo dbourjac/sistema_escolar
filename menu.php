@@ -1,3 +1,9 @@
+<?php           
+include_once("inc/header.php");
+include("inc/sesiones.php");
+include("inc/consultas.php");
+validarSesion();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +18,6 @@
         <div class="content">
             <div class="content-details">
                 <?php
-                include_once("inc/header.php");
-                include("inc/sesiones.php");
-                include("inc/consultas.php");
-                validarSesion();
-
                 encabezado();
                 $carrera = mostrarCarrera();
                 if ($carrera) {

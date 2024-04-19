@@ -1,31 +1,146 @@
 /* Estilos para el menú secundario */
 .secondary-menu {
-  position: fixed;
-  top: 0;
+  position: relative;
+  top: auto;
+  left: auto;
   right: 0;
-  background-color: #FFA9E7;
-  padding: 20px; /* Ajusta el padding según sea necesario */
+  margin-top: auto;
+  background-color: #d6e4f0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 15%;
+  min-width: 140px;
+  float: left; /* Alinea el menú secundario a la izquierda */
 }
 
 .secondary-menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: justify;
 }
 
 .secondary-menu ul li {
-  display: inline;
-  font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto */
-  padding-left: 20px; /* Ajusta el espacio entre palabras */
-  padding-right: 20px; /* Ajusta el espacio entre palabras */
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0;
 }
 
 .secondary-menu ul li a {
   display: block;
-  color: #fff;
+  color: #163172;
   text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
 .secondary-menu ul li a:hover {
-  background-color: #555;
+  background-color: #8ab6d6;
+}
+
+/* Estilos para la caja del portal de alumnos */
+.portal-caja {
+  background-color: #adc4e8;
+  text-align: right;
+  color: #163172;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 8px;
+  font-family: 'Roboto', sans-serif;
+  z-index: 1;
+}
+
+.portal-caja h1 {
+  margin-right: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+}
+
+/* Sección izquierda */
+.left-section {
+  flex: 1;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido del perfil */
+.profile-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Contenedor de la imagen de perfil */
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: -1;
+}
+
+/* Contenido */
+.content {
+  position: relative;
+  flex: 1;
+  background-color: #8ab6d6;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Imagen de perfil */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Contenido del medio */
+.enmedio {
+  background-color: #8ab6d6;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  float: right; /* Alinea .enmedio a la derecha */
+  margin-right: 20px; /* Agrega un margen derecho para separarlo de .secondary-menu */
+  margin: auto;
+}
+
+/* Enlaces en el contenido */
+.content-details a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #163172;
+  text-decoration: none;
+  padding: 0.625rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.content-details a:hover {
+  background-color: #34516C;
+}
+
+/* Fondo */
+body {
+  background-color: #c8def4;
 }

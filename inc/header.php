@@ -1,10 +1,6 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-</head>
 <?php
 // Cambios
 function encabezado() {
-    echo "<h1>Bienvenudo</h1>";
     echo "<h2>{$_SESSION['nombreUsuario']}</h2>";
 }
 function menu() {
@@ -24,9 +20,8 @@ function menu2() {
                 <li>Calificaciones</li>
                 <li>Idiomas</li> 
                 <li>Adeudos</li>
+                <li><a href='logout.php'>Cerrar Sesión</a></li> <!-- Agrega el enlace para cerrar sesión -->
             </ul>
         </nav>";
 }
-
-
 ?>

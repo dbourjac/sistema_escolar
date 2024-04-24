@@ -35,7 +35,9 @@ validarSesion();
     </div>
 </div>
 <div class="enmedio">
-    <p>¡Hola, <?php echo htmlspecialchars($_SESSION["nombreUsuario"]); ?>! Has iniciado sesión exitosamente en el sistema escolar. ¡Bienvenido de vuelta!</p>
+    <div class="enmedio-texto">
+        <p>¡Hola, <?php echo htmlspecialchars($_SESSION["nombreUsuario"]); ?>! Has iniciado sesión exitosamente en el sistema escolar. ¡Bienvenido de vuelta!</p>
+    </div>
 </div>
 <div class="top-section">
     <div class="header">

@@ -69,7 +69,7 @@ if(isset($_POST["user"]) && isset($_POST["pswd"]) && isset($_POST["tipo_usuario"
             header("Location: inscribir_carrera.php");
             exit();
         }
-        header("Location: menu.php");
+        header("Location: ./aca/menu_aca.php");
         exit();
     } else {
         header("Location: index.php?error=invalid_credentials");
@@ -107,7 +107,7 @@ if(isset($_POST["user"]) && isset($_POST["pswd"]) && isset($_POST["tipo_usuario"
             header("Location: inscribir_carrera.php");
             exit();
         }
-        header("Location: menu.php");
+        header("Location: ./adm/menu_adm.php");
         exit();
     } else {
         header("Location: index.php?error=invalid_credentials");

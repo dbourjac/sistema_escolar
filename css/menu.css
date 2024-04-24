@@ -1,16 +1,11 @@
 /* Estilos para el menú secundario */
 .secondary-menu {
-  position: relative;
-  top: auto;
-  left: auto;
-  right: 0;
-  margin-top: auto;
   background-color: #d6e4f0;
   padding: 20px;
   border-radius: 8px;
-  width: 15%;
   min-width: 140px;
   float: left; /* Alinea el menú secundario a la izquierda */
+  margin-left: 20px;
 }
 
 .secondary-menu ul {
@@ -95,7 +90,7 @@
   position: relative;
   flex: 1;
   background-color: #8ab6d6;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   display: flex;
   justify-content: flex-start;
@@ -115,13 +110,17 @@
 /* Contenido del medio */
 .enmedio {
   background-color: #8ab6d6;
-  padding: 20px;
-  border-radius: 8px;
   position: relative;
+  border-radius: 8px;
+  padding: 20px;
   font-family: 'Roboto', sans-serif;
   float: right; /* Alinea .enmedio a la derecha */
-  margin-right: 20px; /* Agrega un margen derecho para separarlo de .secondary-menu */
-  margin: auto;
+  width: auto;
+  margin-right: 20px;
+}
+
+.enmedio-texto {
+  text-align: center;
 }
 
 /* Enlaces en el contenido */
@@ -143,4 +142,10 @@
 /* Fondo */
 body {
   background-color: #c8def4;
+}
+@media screen and (max-width: 1900px) {
+  .enmedio {
+    margin-bottom: 20px; /* Agrega un margen inferior */
+    margin-left: 20px;
+  }
 }

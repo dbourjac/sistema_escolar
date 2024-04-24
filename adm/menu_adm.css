@@ -1,0 +1,303 @@
+/* Estilos para el menú secundario */
+.secondary-menu {
+  background-color: #5a8d95;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 140px;
+  float: left; /* Alinea el menú secundario a la izquierda */
+  margin-left: 20px;
+  margin-right: 20px; /* Agrega espacio a la derecha del menú secundario */
+}
+
+.secondary-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.secondary-menu ul li {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0;
+}
+
+.secondary-menu ul li a {
+  display: block;
+  color: #163172;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.secondary-menu ul li a:hover {
+  background-color: #8ab6d6;
+}
+
+/* Estilos para la caja del portal de alumnos */
+.portal-caja {
+  background-color: #E0E0E0;
+  text-align: right;
+  color: #163172;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 8px;
+  font-family: 'Roboto', sans-serif;
+  z-index: 1;
+}
+
+.portal-caja h1 {
+  margin-right: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+}
+
+/* Sección izquierda */
+.left-section {
+  flex: 1;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido del perfil */
+.profile-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Contenedor de la imagen de perfil */
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: -1;
+}
+
+/* Contenido */
+.content {
+  position: relative;
+  flex: 1;
+  background-color: #5a8d95;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Imagen de perfil */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Contenido del medio */
+.enmedio {
+  background-color: #5a8d95;
+  position: relative;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  width: auto;
+  margin-right: 20px;
+}
+
+.enmedio-texto {
+  text-align: center;
+}
+
+/* Enlaces en el contenido */
+.content-details a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #163172;
+  text-decoration: none;
+  padding: 0.625rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.content-details a:hover {
+  background-color: #34516C;
+}
+
+/* Fondo */
+body {
+  background-color: #F0F5F5;
+}
+@media screen and (max-width: 1900px) {
+  .enmedio {
+    margin-bottom: 20px; /* Agrega un margen inferior */
+    margin-left: 20px;
+  }
+}
+/* Estilos para el formulario de agregar materia */
+.agregar-materia-form {
+  background-color: #5a8d95;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.agregar-materia-form label {
+  font-weight: bold;
+}
+
+.agregar-materia-form input[type="text"],
+.agregar-materia-form textarea,
+.agregar-materia-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.agregar-materia-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.agregar-materia-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el contenedor de la tabla de carreras */
+.carreras-container {
+  background-color: #5a8d95; /* Color de fondo */
+  border-radius: 8px; /* Borde redondeado */
+  font-family: 'Roboto', sans-serif; /* Fuente */
+  margin-top: 40px; /* Ajusta el espacio entre la tabla y el menú secundario */
+}
+
+/* Estilos para la tabla de carreras */
+.carreras-table {
+  width: 80%;
+  font-size: 14px; /* Tamaño de fuente reducido */
+  border-spacing: 0; /* Elimina el espacio entre celdas */
+  margin-top: 20px; /* Ajusta el espacio entre la tabla y el menú secundario */
+}
+
+.carreras-table th,
+.carreras-table td {
+  border: 1px solid #ddd;
+  padding: 6px; /* Espaciado interno reducido */
+  text-align: center; /* Centra el texto */
+}
+
+.carreras-table th {
+  background-color: #5a8d95; /* Color de fondo del encabezado */
+  color: #fff; /* Color del texto del encabezado */
+}
+
+.carreras-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo de las filas pares */
+}
+
+.carreras-table tr:hover {
+  background-color: #34516C; /* Color de fondo al pasar el mouse sobre las filas */
+  color: #fff; /* Color del texto al pasar el mouse sobre las filas */
+}
+
+/* Estilos para el contenedor de la tabla de materias */
+.materias-container {
+  background-color: #5a8d95; /* Color de fondo */
+  border-radius: 8px; /* Borde redondeado */
+  font-family: 'Roboto', sans-serif; /* Fuente */
+  margin-top: 40px; /* Ajusta el espacio entre la tabla y el menú secundario */
+}
+
+/* Estilos para la tabla de materias */
+.materias-table {
+  width: 80%;
+  font-size: 14px; /* Tamaño de fuente reducido */
+  border-spacing: 0; /* Elimina el espacio entre celdas */
+  margin-top: 20px; /* Ajusta el espacio entre la tabla y el menú secundario */
+}
+
+.materias-table th,
+.materias-table td {
+  border: 1px solid #ddd;
+  padding: 10px; /* Espaciado interno reducido */
+  text-align: center; /* Centra el texto */
+}
+
+.materias-table th {
+  background-color: #5a8d95; /* Color de fondo del encabezado */
+  color: #fff; /* Color del texto del encabezado */
+}
+
+.materias-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo de las filas pares */
+}
+
+.materias-table tr:hover {
+  background-color: #34516C; /* Color de fondo al pasar el mouse sobre las filas */
+  color: #fff; /* Color del texto al pasar el mouse sobre las filas */
+}
+/* Estilos para el formulario de agregar carreras */
+.agregar-carrera-form {
+  background-color: #5a8d95;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif; /* Fuente */
+
+}
+
+.agregar-carrera-form label {
+  font-weight: bold;
+}
+
+.agregar-carrera-form input[type="text"],
+.agregar-carrera-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.agregar-carrera-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.agregar-carrera-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
